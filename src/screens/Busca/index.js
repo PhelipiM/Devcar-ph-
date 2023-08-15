@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet,TextInput,Button } from 'react-native';
 
 export default function Busca() {
   return (
     <View style={styles.container}>
-      <Text>Busca</Text>
+      <TextInput style= {styles.input}></TextInput>
     </View>
   );
 }
@@ -14,6 +14,14 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'top',
+    padding: 20,
+  },
+  input: {
+    backgroundColor: '#D3D3D3',
+    borderRadius: 10,
+    width: 320,
+    height: 40,
+
   },
 });

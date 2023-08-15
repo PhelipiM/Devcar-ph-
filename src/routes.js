@@ -1,4 +1,5 @@
 import React from 'react';
+import { StyleSheet } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -14,7 +15,7 @@ const BottomTab = createBottomTabNavigator();
 
 export default function Routes() {
   return (
-    <NavigationContainer>
+    <NavigationContainer style={styles.Navigator}>
       <BottomTab.Navigator 
         screenOptions={{
           tabBarActiveTintColor: 'red',
@@ -50,7 +51,7 @@ export default function Routes() {
               <MaterialIcons name="person" color={color} size={26} />
             ),
           }}
-              />
+        />
       </BottomTab.Navigator>
     </NavigationContainer>
   );
@@ -67,3 +68,8 @@ function PerfilRoutes() {
     </PerfilStack.Navigator>
   );
 } 
+const styles = StyleSheet.create({
+  Navigator: {
+    backgroundColor: '#6A5ACD',
+  },
+});
