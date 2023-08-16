@@ -23,6 +23,27 @@ const cars = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/a/a7/Mazda3_SKYACTIV-G_%28cropped%29.jpg",
   },
+  {
+    id: "4",
+    name: "Nissan Silvia",
+    description: "A sporty and fun-to-drive car.",
+    image:
+      "https://p.turbosquid.com/ts-thumb/ox/Dzgc6T/qFTdsPVG/img_4543/jpg/1588594137/600x600/fit_q87/a7b8ab15313cf9b090813ed0da6cc8f84a0ea25a/img_4543.jpg",
+  },
+  {
+    id: "5",
+    name: "Toyota Supra",
+    description: "A sporty and fun-to-drive car.",
+    image:
+      "https://i.pinimg.com/originals/ca/6b/b7/ca6bb7f7d1a6e9f4ef932c2b13434ad5.jpg",
+  },
+  {
+    id: "6",
+    name: "Nissan Skyline",
+    description: "A sporty and fun-to-drive car.",
+    image:
+      "https://plantaodoslagos.com.br/wp-content/uploads/2022/06/nissan-skyline-paul-walker-5.jpg",
+  },
 ];
 
 export default function Busca() {
@@ -42,7 +63,7 @@ export default function Busca() {
     <View style={styles.container}>
       <TextInput
         style={styles.input}
-        placeholder="Search for a car"
+        placeholder="Procurar um carro"
         value={query}
         onChangeText={setQuery}
         onSubmitEditing={handleSearch}

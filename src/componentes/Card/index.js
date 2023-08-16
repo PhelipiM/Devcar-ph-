@@ -1,12 +1,14 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
-const Card = () => {
+const Card = ({ data, onPress }) => {
     
   return (
-    <View style={styles.card}>
+    <View>
+      <TouchableOpacity style={styles.card} onPress={() => Navigation.navigator()}>
         <Image style={styles.image} source={{ uri: 'https://s1.1zoom.me/big0/572/Volkswagen_Red_Metallic_White_background_592789_1280x853.jpg'}}/>
         <Text style={styles.title}>Volkswagen Gol</Text>
+      </TouchableOpacity>
     </View>
   );
 };
